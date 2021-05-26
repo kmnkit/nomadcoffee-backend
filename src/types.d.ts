@@ -4,6 +4,11 @@ type Context = {
   client: PrismaClient;
 };
 
+export type errType = {
+  ok: Boolean;
+  error: string;
+};
+
 export type Resolver = (
   root: any,
   args: any,
