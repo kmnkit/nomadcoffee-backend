@@ -9,6 +9,11 @@ export type errType = {
   error: string;
 };
 
+export type tokenOkType = {
+  ok: Boolean;
+  token: string;
+};
+
 export type Resolver = (
   root: any,
   args: any,
