@@ -5,9 +5,10 @@
 	"main": "index.js",
 	"scripts": {
 		"compile": "tsc",
+		"dev": "npm run compile && nodemon --exec ts-node src/index.ts --ext ts,js",
 		"migrate": "npx prisma migrate dev --preview-feature",
-		"start": "npm run compile && nodemon --exec ts-node dist/index --ext ts,js",
-		"studio": "npx prisma studio"
+		"studio": "npx prisma studio",
+		"start": "node dist/index.js"
 	},
 	"keywords": [],
 	"author": "",
